@@ -14,8 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
-/tmp
+/tmp                                                                                             rake swagger:docs
 
 .idea/
 .DS_Store
 
+/public/apidocs/
