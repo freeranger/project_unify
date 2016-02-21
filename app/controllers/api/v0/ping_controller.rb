@@ -3,7 +3,7 @@ class Api::V0::PingController < ApiController
   swagger_controller :ping, 'Ping'
 
   swagger_api :index do
-    summary 'Returns "Pong" to check the api is alive'
+    summary 'Responds with "Pong"Returns "Pong" to check the api is alive"'
   end
 
   def index
