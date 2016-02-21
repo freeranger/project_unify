@@ -15,6 +15,12 @@ Swagger::Docs::Config.register_apis({
                                             controller_base_path: '',
                                             api_file_path: 'public/apidocs',
                                             base_path: apiUrl,
-                                            clean_directory: true
+                                            clean_directory: true,
+                                            :attributes => {
+                                                :info => {
+                                                   "title" => "Project Unify API",
+                                                   "description" => "This describes the resources that make up the official Project Unify public API"
+                                              }
+                                            }
                                         }
                                     })
