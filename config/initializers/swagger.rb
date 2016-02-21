@@ -8,13 +8,13 @@ end
 
 host = ENV['IP'] || 'localhost'
 port = ENV['PORT'] || '3000'
-apiUrl = "http://#{host}:#{port}"
+api_url = "http://#{host}:#{port}"
 
 Swagger::Docs::Config.register_apis({
                                         '1.0' => {
                                             controller_base_path: '',
                                             api_file_path: 'public/apidocs',
-                                            base_path: apiUrl,
+                                            base_path: api_url,
                                             clean_directory: true
                                         }
                                     })
