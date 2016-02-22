@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'json'
 gem 'godmin'
 gem 'rack-cors', require: 'rack/cors'
-
+gem 'swagger-docs'
 
 group :development, :test do
   gem 'pry'
@@ -39,8 +39,6 @@ group :test do
   gem 'cucumber'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
-  gem 'httparty'
-  gem 'childprocess'
   gem 'poltergeist'
 end
 
