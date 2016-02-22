@@ -15,8 +15,11 @@ Given(/^I am logged in as admin$/) do
   click_link_or_button 'Sign in'
 end
 
-Given(/^I visit the "([^"]*)" page$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^I visit the "([^"]*)" page$/) do |path|
+  case path
+  when 'api' || '/api'
+    visit '/api'
+  end
 end
 
 Given(/^I click on "([^"]*)"$/) do |link|

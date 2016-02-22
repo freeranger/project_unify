@@ -16,10 +16,10 @@ Swagger::Docs::Config.register_apis({
                                             api_file_path: 'public/apidocs',
                                             base_path: api_url,
                                             clean_directory: true,
-                                            :attributes => {
-                                                :info => {
-                                                   "title" => "Project Unify API",
-                                                   "description" => "This describes the resources that make up the official Project Unify public API"
+                                            attributes: {
+                                                info: {
+                                                   'title' => 'Project Unify API',
+                                                   'description' => 'This describes the resources that make up the official Project Unify public API'
                                               }
                                             }
                                         }
