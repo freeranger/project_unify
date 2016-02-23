@@ -41,3 +41,6 @@ Then /^the index JSON response should show info about:$/ do |table|
 
 end
 
+Given(/^I generate the Swagger documentation$/) do
+  Kernel.system 'bundle exec rake swagger:docs'
+end
