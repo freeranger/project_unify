@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.0'
 
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.5.1'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -10,6 +10,10 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'json'
+gem 'godmin'
+gem 'rack-cors', require: 'rack/cors'
+gem 'swagger-docs'
 
 group :development, :test do
   gem 'pry'
@@ -18,10 +22,23 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'launchy'
+  gem 'faker'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+
+  # security checking
+  gem 'brakeman', require: false
+  gem 'bundler-audit', require: false
+end
+
+group :test do
+  gem 'cucumber'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'poltergeist'
 end
 
