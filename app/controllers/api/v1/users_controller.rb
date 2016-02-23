@@ -14,8 +14,8 @@ class Api::V1::UsersController < ApiController
 
   swagger_api :show do
     summary 'Responds with a user resource'
-    param :path, :user, :string, :required, "User Id"
-    response :ok, "Success", :User
+    param :path, :user, :string, :required, 'User Id'
+    response :ok, 'Success', :User
     response :not_found
     response :bad_request
     notes 'Currently returns the same details as for a list but should return all details if the user is you'
