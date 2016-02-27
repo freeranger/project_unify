@@ -26,3 +26,39 @@ Feature: As a user
       | matches |
       | Tarek   |
       | Ivan    |
+
+  Scenario: Returning matches for a user
+    Given: The API is running
+    And the Accept Type is application/json
+    And the client requests GET /api/v1/unify/1
+    Then a "200" status code is returned
+    And the JSON should be:
+        """
+        {
+          "user": {
+            "skills": [
+              "travels",
+              "cooking",
+              "programming"
+            ],
+            "user_name": "Thomas"
+          },
+          "matches": [
+            {
+              "user": {
+                "user_name": "Tarek",
+                "profile": "http://example.org/api/v1/users/4",
+                "skills": ["politics","programming"]
+              }
+            },
+            {
+              "user": {
+                "user_name": "Ivan",
+                "skills": ["programming"],
+                "profile": "http://example.org/api/v1/users/5"
+              }
+            }
+          ]
+        }
+        """
+
