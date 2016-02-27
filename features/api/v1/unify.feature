@@ -46,16 +46,14 @@ Feature: As a user
           "matches": [
             {
               "user": {
-                "user_name": "Tarek",
-                "profile": "http://example.org/api/v1/users/4",
-                "skills": ["politics","programming"]
+                "skills": ["politics","programming"],
+                "user_name": "Tarek"
               }
             },
             {
               "user": {
                 "user_name": "Ivan",
-                "skills": ["programming"],
-                "profile": "http://example.org/api/v1/users/5"
+                "skills": ["programming"]
               }
             }
           ]
